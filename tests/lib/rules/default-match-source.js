@@ -31,9 +31,13 @@ ruleTester.run('default-match-source', rule, {
     `import myClass from './path/to/my-class.js'`,
     `import myPackage from 'my-package'`,
     `import myZip2 from 'my-zip2'`,
+    // substr [import] in [src]
     `import shell from 'await-shell'`,
     `import pkg from 'my-pkg'`,
     `import pkg from 'myPkg'`,
+    // substr [src] in [import]
+    `import devCli from './dist/cli.mjs'`,
+    `import distCli from './dist/cli.cjs'`,
   ],
 
   invalid: [
