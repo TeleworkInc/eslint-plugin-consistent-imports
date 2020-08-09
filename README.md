@@ -13,13 +13,13 @@ valid: [
 ...
 invalid: [
     `import bar from './path/to/foo.js';`,
-    // ✅ import foo from './path/to/foo.js';
+    // import foo from './path/to/foo.js';
 
     `import bar from 'my-awesome-package';`
-    // ✅ import myAwesomePackage from 'my-awesome-package';
+    // import myAwesomePackage from 'my-awesome-package';
     
     `import bar from './path/to/an-awesome-file.js';`
-    // ✅ import anAwesomeFile from './path/to/an-awesome-file.js';
+    // import anAwesomeFile from './path/to/an-awesome-file.js';
 ]
 ```
 
