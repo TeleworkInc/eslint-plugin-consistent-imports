@@ -9,3 +9,4 @@
  */
 
 import mySpecialPackage from './path/to/my-special-package.js';
+console.log(mySpecialPackage);

@@ -11,9 +11,8 @@
 
 
 const rule = require('../../../lib/rules/default-variable-match-filename');
-
-const { camelCaseError } = require('../../../lib/camelCase');
 const RuleTester = require('eslint').RuleTester;
+const { camelCaseError } = require('../../../lib/camelCase');
 
 RuleTester.setDefaultConfig({
   parserOptions: {
