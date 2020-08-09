@@ -11,6 +11,7 @@
 
 
 const rule = require('../../../lib/rules/default-variable-match-filename');
+
 const { DEFAULT_CAMELCASE } = require('../../../lib/camelCase');
 const RuleTester = require('eslint').RuleTester;
 
@@ -36,9 +37,9 @@ ruleTester.run('default-variable-match-filename', rule, {
   invalid: [
     {
       code: `import bar from './path/to/foo.js';`,
-      errors: [{
-        message: DEFAULT_CAMELCASE,
-      }],
+      errors: [
+        DEFAULT_CAMELCASE,
+      ],
     },
   ],
 });
