@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-consistent-imports",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "ESLint rules to enforce consistent variable names for default imports.",
   "keywords": [
     "eslint",
