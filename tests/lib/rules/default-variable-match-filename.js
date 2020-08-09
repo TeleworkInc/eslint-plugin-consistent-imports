@@ -12,7 +12,7 @@
 
 const rule = require('../../../lib/rules/default-variable-match-filename');
 
-const { DEFAULT_CAMELCASE } = require('../../../lib/camelCase');
+const { camelCaseError } = require('../../../lib/camelCase');
 const RuleTester = require('eslint').RuleTester;
 
 RuleTester.setDefaultConfig({
@@ -37,9 +37,18 @@ ruleTester.run('default-variable-match-filename', rule, {
   invalid: [
     {
       code: `import bar from './path/to/foo.js';`,
-      errors: [
-        DEFAULT_CAMELCASE,
-      ],
+      errors: [camelCaseError('bar', 'foo')],
+      output: `import foo from './path/to/foo.js';`,
+    },
+    {
+      code: `import bar from 'my-awesome-package';`,
+      errors: [camelCaseError('bar', 'my-awesome-package')],
+      output: `import myAwesomePackage from 'my-awesome-package';`,
+    },
+    {
+      code: `import bar from './path/to/an-awesome-file.js';`,
+      errors: [camelCaseError('bar', 'an-awesome-file')],
+      output: `import anAwesomeFile from './path/to/an-awesome-file.js';`,
     },
   ],
 });
