@@ -1,4 +1,4 @@
-# The variable name for a default import should be a camelcase alphanumeric version of the filename. (default-variable-match-filename)
+# The variable name for a default import should be a camelcase alphanumeric version of the filename. (default-match-source)
 
 Please describe the origin of the rule here.
 

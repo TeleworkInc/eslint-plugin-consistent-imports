@@ -10,7 +10,7 @@
 'use strict';
 
 
-const rule = require('../../../lib/rules/default-variable-match-filename');
+const rule = require('../../../lib/rules/default-match-source');
 const RuleTester = require('eslint').RuleTester;
 const { camelCaseError } = require('../../../lib/camelCase');
 
@@ -23,7 +23,7 @@ RuleTester.setDefaultConfig({
 
 
 const ruleTester = new RuleTester();
-ruleTester.run('default-variable-match-filename', rule, {
+ruleTester.run('default-match-source', rule, {
 
   valid: [
     `import foo from './path/to/foo.js';`,

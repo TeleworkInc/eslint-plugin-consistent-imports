@@ -8,5 +8,5 @@
  * @author Christian Lewis
  */
 
-import mySpecialPackage from './path/to/my-special-package.js';
-console.log(mySpecialPackage);
+import foo from './path/to/my-special-package.js';
+console.log(foo);

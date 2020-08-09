@@ -8,6 +8,7 @@ env:
 
 extends:
   - google
+  - plugin:consistent-imports/recommended
   - plugin:jsdoc/recommended
 
 parserOptions:
@@ -20,9 +21,6 @@ ignorePatterns:
   - externs.js
 
 rules:
-
-  consistent-imports/default-variable-match-filename:
-    - error
   
   jsdoc/check-tag-names:
     - error
