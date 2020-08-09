@@ -70,9 +70,6 @@ rules:
     - error
     - always
 
-plugins:
-  - consistent-imports
-
 settings:
   jsdoc:
     mode: closure
@@ -80,3 +77,6 @@ settings:
       # Disable @fileoverview -> @file replacement
       fileoverview: fileoverview
       file: fileoverview
+
+plugins:
+  - consistent-imports

@@ -1,6 +1,7 @@
 # eslint-plugin-consistent-imports
 
-ESLint rules to enforce consistent variable names for default imports.
+ESLint rules to enforce consistent variable names for default imports. Add
+`plugin:consistent-imports/recommended` to your `extends` setting for quick startup.
 
 ```javascript
 valid: [
