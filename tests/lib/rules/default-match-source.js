@@ -35,6 +35,7 @@ ruleTester.run('default-match-source', rule, {
     `import shell from 'await-shell'`,
     `import pkg from 'my-pkg'`,
     `import pkg from 'myPkg'`,
+    `import myPackage from 'long-name-my-package'`,
     // substr [src] in [import]
     `import devCli from './dist/cli.mjs'`,
     `import distCli from './dist/cli.cjs'`,
