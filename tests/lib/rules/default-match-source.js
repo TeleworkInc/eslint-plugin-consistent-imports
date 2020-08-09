@@ -26,11 +26,14 @@ const ruleTester = new RuleTester();
 ruleTester.run('default-match-source', rule, {
 
   valid: [
-    `import foo from './path/to/foo.js';`,
-    `import myTest from './path/to/myTest.js';`,
-    `import myClass from './path/to/my-class.js';`,
+    `import foo from './path/to/foo.js'`,
+    `import myTest from './path/to/myTest.js'`,
+    `import myClass from './path/to/my-class.js'`,
     `import myPackage from 'my-package'`,
     `import myZip2 from 'my-zip2'`,
+    `import shell from 'await-shell'`,
+    `import pkg from 'my-pkg'`,
+    `import pkg from 'myPkg'`,
   ],
 
   invalid: [
